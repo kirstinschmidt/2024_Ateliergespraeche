@@ -1,0 +1,240 @@
+---
+title: "Reproducible Documentation of Analysis Study 1"
+format: 
+  html:
+    theme: solar
+    fontsize: 0.85em
+    toc: true
+    toc-location: left
+    toc-depth: 4
+    embed-resources: true
+    code-fold: true
+    code-tools: true
+editor: source
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
+---
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+# R Version
+
+```{r}
+R.Version()
+```
+
+
+# Import of the Data
+
+The data was assessed with the `formr` survey framework [@arslan2020]. The raw data was imported via the following code. 
+
+__Please note that the results of the Bayesian analyses may slightly vary due to the estimation approach.__
+
+```{r}
+#| label: libraries and data import
+#| results: hide
+#| warning: false
+#| message: false
+library(tidyverse)
+library(ggforce)
+library(lme4)
+library(BFpack)
+library(hrbrthemes)
+library(patchwork)
+library(brms)
+library(viridis)
+library(ggdist)
+library(tidybayes)
+library(here)
+library(skimr)
+library(effectsize)
+load(here("data/teachers_study1_N40.RData"))
+study1 <- haven::zap_label(study1)
+
+skim(study1)
+
+set.seed(25051982)
+```
+
+# Data Wrangling
+
+## Data Set 1
+
+__(without efficiency and accuracy transformed)__
+
+```{r}
+#| label: data wrangling
+
+# wrangle information on the plot type, ES, ...
+plot_info <- study1 %>%
+    pivot_longer(2:195, names_to = "variables", values_to = "values", 
+                 values_transform = as.character) %>%
+    dplyr::filter(str_detect(variables, "plot")) %>% 
+    # we only need the rows with info on plots
+    tidyr::separate(col = values, into = c("type", "axis", "effsize"), 
+                    # separate the info into three columns
+                    sep = "_", remove = F) %>%
+    dplyr::mutate(plot = variables,       # rename variables for later join
+                  type = paste(type, axis, sep = "_")) %>%
+    dplyr::select(-variables, -axis)
+
+# wrangle answers to items on each page
+item_values <- study1 %>%
+    dplyr::select(-c(topic:itemo)) %>%
+    pivot_longer(2:169, names_to = "variables", values_to = "values", 
+                 values_transform = as.character) %>%
+    dplyr::mutate(variables = case_when(      # recode variable names that have
+        variables == "sensi_6" ~ "sensi_06",  # accidentally been labeled
+        variables == "acccl_6" ~ "acccl_06",  # without zero
+        variables == "accu3_6" ~ "accu3_06",
+        variables == "accov_6" ~ "accov_06",
+        variables == "diffi_6" ~ "diffi_06",
+        variables == "infor_6" ~ "infor_06",
+        variables == "value_6" ~ "value_06",
+        TRUE ~ variables 
+    )) %>%
+    dplyr::mutate(plot = paste0("plotx_", str_sub(variables, -2, -1)), 
+                  # create variable for later join
+                  variables = str_sub(variables, 1, -4)) %>%    
+    # rename variable names to get a data set 
+    # with one line per participant per page
+    pivot_wider(id_cols = c(session, plot), names_from = "variables", 
+                values_from = "values")
+
+# join the two data sets
+study1_w <- full_join(plot_info, item_values, 
+                               by = c("session", "plot")) %>% 
+    # by participant and page (plot)
+    dplyr::select(-values) %>%
+    dplyr::mutate(rating_am = as.numeric(acccl), # some var need to be defined as
+                  rating_u3 = as.numeric(accu3), # numeric again
+                  rating_ov = as.numeric(accov),
+                  diffi = as.numeric(diffi),
+                  infor = as.numeric(infor),
+                  value = as.numeric(value),
+                  effsize = as.numeric(effsize),
+                  effsize_am = case_when( 
+                  # there is no negative Cliff's Delta, so we have to compute 
+                  # two transformations
+                      effsize > 0 ~   (((2*pnorm(effsize/2))-1)/pnorm(effsize/2)),
+                  # transform the actual effect size Cohen's d to Cliff's Delta
+                      effsize < 0 ~ (- (((2*pnorm(abs(effsize)/2))-1)/pnorm(abs(effsize)/2))) 
+                  # transform the actual effect size Cohen's d to Cliff's Delta 
+                  # and make it negative as in the item
+                  ),
+                  effsize_u3 = 1-pnorm(effsize), # reverse so that it fits the direction of the U3 item
+                  # transform the actual effect size Cohen's d to Cohen's U3
+                  effsize_ov = 2 * pnorm(-abs(effsize) / 2), 
+                  # transform the actual effect size Cohen's d to overlap
+                  # actual difference of rating relative to depicted effectsize 
+                  rating_am_in_d = r_to_d(rating_am),
+                  rating_u3_in_d = qnorm(rating_u3/100), 
+                  rating_ov_in_d = -2*qnorm(0.5*rating_ov/100),
+                  diff_am = ifelse(effsize < 0,
+                                   (rating_am_in_d - effsize)*(-1),
+                                   rating_am_in_d - effsize),
+                  diff_u3 = ifelse(effsize < 0,
+                                   (rating_u3_in_d - effsize)*(-1),
+                                   rating_u3_in_d - effsize),
+                  diff_ov = ifelse(effsize < 0,
+                                    (rating_ov_in_d - effsize)*(-1),
+                                    rating_ov_in_d - effsize))  %>%
+    group_by(session) %>% 
+    mutate(rating_ov_misconcept = median(rating_ov, na.rm = T) < 68.9,
+           rating_u3_misconcept = median(rating_u3, na.rm = T) < 21.2) %>% 
+    ungroup() %>% 
+    mutate(rating_u3_filtered = ifelse(rating_u3_misconcept == T, NA, rating_u3_in_d),
+           rating_ov_filtered = ifelse(rating_ov_misconcept == T, NA, rating_ov_in_d),
+           sensi_binary = ifelse(is.na(sensi), # 1 if NOT "equal"
+                                        NA,
+                                        as.numeric(!grepl("equal", sensi))),
+           sensi_ordinal = ordered(factor(substr(sensi, 55, 100)),
+                                   levels = c("inferior",
+                                              "equal",
+                                              "superior")),
+           sensi_binary_filtered = case_when(sensi_ordinal == "equal" ~ 0, 
+                                             (sensi_ordinal == "inferior" & 
+                                                  effsize < 0) | 
+                                                  (sensi_ordinal == "superior" & 
+                                                  effsize > 0) ~ as.numeric(NA),
+                                             (sensi_ordinal == "inferior" & # was not there
+                                                  effsize > 0) | 
+                                                  (sensi_ordinal == "superior" & 
+                                                  effsize < 0) ~ 1, 
+                                             TRUE ~ as.numeric(NA)), # was 1
+           sensi_correct = case_when(sensi_ordinal == "equal" ~ "judged equal", 
+                                     (sensi_ordinal == "inferior" & 
+                                                  effsize < 0) | 
+                                                  (sensi_ordinal == "superior" & 
+                                                  effsize > 0) ~ "wrong direction",
+                                             (sensi_ordinal == "inferior" & # was not there
+                                                  effsize > 0) | 
+                                                  (sensi_ordinal == "superior" & 
+                                                  effsize < 0) ~ "right direction", 
+                                             TRUE ~ NA_character_),
+           effsize_abs = abs(effsize))
+```
+
+### Graphical Overview
+```{r}
+
+data_informativity_product_plot <-
+  study1_w %>% 
+  select(infor, type) %>%
+  mutate(across(type, ~factor(.,
+                        levels=c("gardneraltman_xaxis","raincloud_yaxis", "halfeye_xaxis", "halfeye_yaxis")))) %>%
+  rename("Informativität" = infor) %>%
+         gather(var, val, -type) %>%
+         mutate(var = fct_relevel(var,
+                "Informativität")) %>%
+         group_by(type, var, val) %>%
+         dplyr::summarize(freq = n()) %>%
+         mutate(Häufigkeit = freq)
+
+plot_informativity <- data_informativity_product_plot |> 
+  ggplot(aes(var, val)) + 
+  geom_point(aes(size = Häufigkeit, color = Häufigkeit),
+             shape = 15) +
+  scale_size_continuous(range = c(2,10)) + 
+  scale_color_gradient(low = "#66ff0d", high = "#006d00") +
+  stat_summary(data = study1_w %>% 
+                 select(infor, type) %>%
+                 rename("Informativität" = infor) %>% 
+                 mutate(across(type, ~factor(.,
+                 levels=c("gardneraltman_xaxis","raincloud_yaxis", "halfeye_xaxis", "halfeye_yaxis")))) %>%
+         gather(var, val, -type) %>%
+         mutate(var = fct_relevel(var,
+                "Informativität")), 
+                 aes(var, val),
+                 fun.data = "mean_sdl", fun.args = list(mult = 1),
+               color = "black") + 
+  theme_ipsum_ps(axis_text_size = "30") + 
+  scale_y_continuous(breaks = c(1,2,3,4,5,6,7)) +
+  theme(panel.grid.major.x = element_blank(), panel.grid.minor.y =  element_blank(),
+        text = element_text(size=35),
+        plot.title = element_text(size=50),
+        plot.subtitle = element_text(size=40),
+        plot.caption = element_text(size=30, lineheight = 0.3),
+        strip.text = element_text(size = 40),
+        axis.text.x=element_blank()) + 
+  guides(color=guide_legend(), size = guide_legend()) +
+  facet_wrap(~type) + 
+    labs(title = "Wahrgenommene Informativität",
+         subtitle = "je Visualisierungsart",
+         caption = "Mittelwert ± 1*SD; BF10 > 100; 
+         Halfeye plots werden informativer wahrgenommen (≤ d ≤))") + 
+    ylab("") +
+    xlab("")
+
+plot_informativity
+
+ggsave("img/study2_plot_informativity.png",
+      width = 5,
+      height = 7,
+      dpi = 400)
+```

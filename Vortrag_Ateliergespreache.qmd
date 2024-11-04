@@ -1,0 +1,849 @@
+---
+title: "Bildungswissenschaftliche Forschungsergebnisse nutzerfreundlich an Lehrkräfte vermitteln?"
+subtitle: "Ergebnisse aus verschiedenen experimentellen Studien"
+author: Kirstin Schmidt | Pädagogische Hochschule Karlsruhe
+institute: Institut für Schul- und Unterrichtsentwicklung
+logo: img/ph-logo.svg
+picture: img/KA.jpeg
+date: today
+lang: de
+date-format: ""
+embed-resources: false
+format: rlille-revealjs
+lightbox: true
+bibliography: references.bib
+csl: apa.csl
+title-slide-attributes: 
+  data-notes: 
+  - freue mich heute Einblicke in meine Forschungstätigkeit zu geben
+  - ausgewählte Ergebnisse rund um das Thema nutzerfreundliche Kommunikation bildungswissenschaftlicher Forschungsergebnisse an Lehrpersonen
+---
+
+## Überblick {.smaller}
+
+```{r }
+#| label: libraries
+#| echo: false
+
+# z.B. library(tidyverse)
+
+
+```
+
+| {{< iconify fluent-emoji-high-contrast:newspaper >}} | Einführung |
+|-----------------------------------:|:-----------------------------------|
+| {{< iconify fa-solid:school >}} | Evidenzinformierte Schulpraxis |
+| {{< iconify fa-solid:comments >}} | Wissenschaftskommunikation |
+| {{< iconify fa6-solid file-lines >}} {{< iconify fa6-solid chart-area >}} | Eigene Forschungstätigkeiten <br> - Studie 1: Textbasierte Kommunikation von Inferenzstatistiken und Effektstärken <br> - Studie 2: Visuelle Kommunikation von Effektstärken <br> - Studie 3: Visuelle vs. textbasierte Kommunikation von Effektstärken |
+| {{< iconify bxs:directions >}} | Diskussion und Ausblick |
+
+: {#tbl-agenda tbl-colwidths="\[15,85\]"}
+
+<!-- style the agenda table -->
+
+<style>
+#tbl-agenda table th {
+font-weight: normal !important;
+border: none !important;
+}
+
+#tbl-agenda table td {
+font-weight: normal !important;
+border: none !important;
+}
+</style>
+
+::: footer
+{{< iconify academicons:open-materials >}} Folien cc-by {{< iconify academicons:creative-commons-by >}} unter XXX
+:::
+
+## Forschungsergebnisse aus den Bildungswissenschaften
+
+:::::::::: columns
+::::: {.column width="50%"}
+::: r-stack
+![](img/g8g9_1.png){width="70%" fig-align="center"} ![](img/g8g9_3.png){width="60%" fig-align="center"}
+
+![](img/g8g9_2.png){width="50%" fig-align="center"}
+:::
+
+::: fragment
+&rarr; Forschungsergebnisse, die z.B. politisches Handeln informieren können (Makroebene)
+:::
+:::::
+
+:::::: {.column width="50%"}
+:::: fragment
+::: r-stack
+![](img/Paper_Retrieval%20practice.png){width="70%" fig-align="center"}
+
+![](img/CHU_Forschendes%20Lernen.png){width="60%" fig-align="left"}
+
+
+:::
+::::
+
+::: fragment
+<br> 
+<br> 
+<br> 
+&rarr; Forschungsergebnisse, die Handeln der Lehrpersonen informieren können (Mikroebene)
+:::
+::::::
+::::::::::
+
+::: notes
+- es gibt eine Vielzahl an bildungswissenschaftlichen Forschungsergebnissen - manche sind proximaler zum Handeln von Lehrpersonen, manche distale
+  + wenn wir an Studien z.B. zum Thema G8, G9 denken oder an XXX Infos für die Bildungspolitik -> Makroebene 
+-   wohingegen Befunde zu Themen wie retrieval practice, Forschendes Lernen die Unterrichtsgestaltung von Lehrpersonen oder das Handeln im Untericht beeinflussen können // unterschiedlich in der Praxis genutzt werden
+    -   Evidenz z.B. zu Forschendem Lernen kann die eigene Unterrichtspraxis innovieren
+    -   Evidenz kann aber auch genutzt werden, um Tipps für Schüler:innen abzuleiten z.B. wie Sie am besten Vokabeln lernen
+    
+- aber wie müssen solche Forschungsergebnisse aufbereitet sein, damit Lehrpersonen solche Ergebnisse verstehen und solche Schlussfolgerungen für ihre Praxis ableiten können?
+- Wissenschaftliches Wissen sehr komplex (Unsicherheit, Widersprüchlichkeit), aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt
+
+
+-   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
+    -   Studiendesign
+    -   **Inferenzstatistik**
+    -   **Effektstärken**
+    -   ...
+
+
+:::
+
+## Forschungsergebnisse aus den Bildungswissenschaften - wie aufbereiten? {.smaller .scrollable}
+
+::::::::: columns
+::::: {.column width="50%"}
+::: fragment
+**Inferenzstatistik**
+
+-   *Statistische Signifikanz (und p-Wert)*: <br> [z.B. "Basierend auf den 55 Einzelstudien ergibt die Metaanalyse einen signifikanten positiven Gesamteffekt von Peer Assessment auf die Leistung" [@diery2021, S.3]]{style="color:#8cd000;"}
+-   *Bayes Faktor* <br> [z.B. "The Bayes Factor is 20, indicating that the data are at least than 20 times more likely under the assumption that men and women are different than under the assumption that they are equal" [@hanel2019b, p. 471]]{style="color:#8cd000;"}
+-   *Inferential uncertainty* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
+-   ...
+:::
+:::::
+
+::::: {.column width="50%"}
+::: fragment
+**Effektstärken**
+
+-   *Standardisierte Effektstärke* <br> [z.B. Cohen's *d*]{style="color:#8cd000;"}
+-   *Leichter verständliche standardisierte Effektstärken* <br> [z.B. Cohen's U<sub>3</sub>:"..., dass 70% der SchülerInnen, die mit Lernmaterialien mit Hervorhebungen gearbeitet haben, Lerninhalte besser wiedergeben (...) als der Durchschnitt der Kontrollgruppe" [@wiesbeck2018 S.5]]{style="color:#8cd000;"}
+-   *Effektstärken in natürlichen Metriken* <br> [z.B. Month of Progress: "The average impact of metacognition and self-regulation strategies (on learning) is an additional seven month's progress over the course of a year" [@EEF2021]; Größenanalogien: "It is also approximately the size of the differencein mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
+-   ...
+:::
+:::::
+:::::::::
+
+
+::: {.fragment}
+<center>
+-  **Präsentationsmodus**
+    -   Text
+    -   Visualisierung ![](img/Tüdibase_U3_vis){.lightbox width="20%" fig-align="left"}
+</center> 
+:::
+
+
+::: notes
+- wie sollte man Ergebnisse der Inferenzstatistik kommunizeren?
+  + klassische Art: Signifikanz und p-Werten, aber aus Forschung weiß man, dass viele Fehlkonzepte hervorruft
+  + eine andere Inferenzstatistik wählen Bayes Faktoren
+  + eher auf Unsicherheiten den Fokus in der Kommunikation wählen?
+- zusätzlich Effektstärken? oder ausschließlich Effektstärken?
+- und wie diese?
+  + klassische Effektstärken, die in der Wissenschaft berichtet werden? aber voraussetzungsvoll z.B. SD verstehen, Benchmarks kennen
+  + eher sogenannte leicht verständliche standerdisierte Effektstärken verwenden wie U3
+  + oder natürliche Metriken wie Month of Progress oder Größenanalogien
+  
+- Sollte man diese statistischen Informationen in in einem Text oder in einer Visualisierung aufbereiten? beide Möglichkeiten kombinieren? 
+
+ Barometer
+    -   sollte man erst die Einstellungen adressieren, also, dass Ergebnisse als informativ und praktisch relevant angesehen werden, bevor man Verständnis fördert
+
+zu all diesen Fragen bisher kaum empirische Forschung im Bildungskontext 
+
+- Relevanz nochmals stärker theoretisch einordnen
+:::
+
+# Evidenzinformierte Schulpraxis {{< iconify fa-solid:school >}}
+
+::: notes
+-   in dem Diskurs evidenzinformierte Schulpraxis zu verorten, aber Fokus auf Mikroebene
+- also wissenschaftliche Evidenz als Informationsquelle für die Praxis
+
+:::
+
+## Evidenzinformierte Schulpraxis {{< iconify fa-solid:school >}} {.smaller}
+
+::::::: columns
+:::: {.column width="50%"}
+::: r-stack
+![](img/Paper_Retrieval%20practice.png){width="90%" fig-align="center"}
+
+![](img/CHU_Forschendes%20Lernen.png){.lightbox width="70%" fig-align="center"}
+:::
+::::
+
+:::: {.column width="50%"}
+::: fragment
+<br> <br> <br> Evidenz = systematisch gewonnene Information [z.B. @bromme2014; @shavelson2021; @doering2016]
+:::
+::::
+:::::::
+
+::: fragment
+<center>{{< iconify octicon:goal-16 >}} Steigerung der Professionalisierung von Lehrpersonen, der Schul- und Unterrichtsqualität und Schüler:innenleistung <br> [z.B. @bell2010; @double2020; @filderman2018; @coldwell2017; @kennedy2017]</center>
+:::
+
+::: notes
+-   die Forderung evidenzinformiert Schulpraxis kann beispielsweise kognitionspsychologisch begründet werden
+    -   Evidenz ist im Vergleich zu bespielsweise eigenen Erfahrungen als objektivere Informationsquelle anzusehen
+    -   Da die Information systematisch nach bestimmten Kriterien gewonnen wird und dadurch weniger von kognitive Verzerrungen beeinflusst ist
+    -   Ihr wird daher Potenzial zugeschrieben
+        -   Professionalisierung von Lehrpersonen stärken
+        -   Unterrichts- und Schulqualität
+        -   letztlich Schüler:innenleistung steigern kann
+    -   was auch mit ersten empirischen Studien belegt werden kann
+:::
+
+## Barrieren evidenzinformierter Schulpraxis {{< iconify fluent-mdl2:processing-cancel >}} {.smaller}
+
+> Theoretische Implikationen evidenzinformierter Schulpraxis [{{< iconify material-symbols:arrows-outward >}}]{style="color:#96412D;"} praktische Umsetzung durch Lehrpersonen [{{< iconify fa:flash >}}]{style="color:#96412D;"}
+
+::: incremental
+-   Vielfältige Barrieren, die die Realisierung evidenzinformierter Praxis erschweren bzw. hemmen
+    -   Ebene der individuellen Lehrperson
+    -   Ebene des Forschungswissens
+    -   Ebene der Schule
+    -   Ebene der Kommunikation
+
+[@schaik2018; @dagenais2012; @hemsley-brown2003; @schmidt2024]
+
+<!-- @thomm2021a; @thomm2021b; @voss2022; @schaik2019; @katwijk2019; @reuter2023; @menz2021; @kallitsoglou2023; @joram2020; @gold2023; @futterleib2022; @brants2023; @nägel2023; @rycroft-smith2022b; @seifried2024; @schmidt2022; @pegram2022; @cain2019b; @ahmed2019; @galindo-dominguez2022; @olmos-rueda2023 -->
+:::
+
+::: notes
+-   wie Sie sicherlich auch wissen: gibt es aber eine Kluft zwischen diesen theoretischen Implikationen und der tatsächlichen Praxis
+-   Lehrpersonen greifen kaum auf Evidenz in ihrem professionellen Handeln zurück
+-   was nicht nur auf ihre Kompetenzen und Überzeugungen - also die individuelle Ebene der Lehrpersonen zurückzuführen ist, sondern empirisch zeigen sich vielzählige Barrieren, die unterschiedlichen Ebenen zugeordnet werden können
+    -   neben der Ebene der individuellen Lehrperson
+    -   Ebene der Forschungswissens. Ein Beispiel: Forschungsergebnisse sind durch die Verwendung zahlreicher Fachbegriffe z.B. statistischer Fachtermini schwer verständlich
+    -   Schule z.B. Rahmenbedingungen an der Schule, um sich mit Wissenschaft auseinanderzusetzen
+    -   Kommunikation: Kooperation zwischen Wissenschaftler:innen und Praktiker:innen im Forschungsprozess
+:::
+
+## Umgang mit Barrieren evidenzinformierter Schulpraxis {{< iconify fluent-mdl2:processing >}}
+
+<br>
+
+**Verschiedene Ansätze:**
+
+::: incremental
+-   Professionalisierung der (angehenden) Lehrpersonen [z.B. @böttcher-oschmann2021; @schaik2019; @coldwell2017; @rochnia2022; @krause-wichmann2023; @reuter2023]
+
+-   Gestaltung der Wissenschaftskommunikation [z.B. @higgins2022; @lortie2021; @rycroft-smith2022b]
+:::
+
+::: notes
+-   in der Literatur finden sich mittlerweile unterschiedliche Ansätze um Barrieren in Gelingensbedingungen umzuwandeln
+-   Diese können wieder in die vier Ebenen - Lehrperson, Forschungswissen, Schule, Kommunikation-, die ich gerade genannt habe, unterteilt werden oder noch übergreifender in zwei Ansätze gegliedert werden
+    -   Professionalisierung der Lehrpersonen ansetzen, indem gezielt Kompetenzen, die Realisierung EIP notwendig sind, gefördert werden
+    -   Gestaltung der WK
+:::
+
+## Umgang mit Barrieren evidenzinformierter Schulpraxis {{< iconify fluent-mdl2:processing >}}
+
+<br>
+
+**Verschiedene Ansätze:**
+
+-   Professionalisierung der (angehenden) Lehrpersonen [z.B. @böttcher-oschmann2021; @schaik2019; @coldwell2017; @rochnia2022; @krause-wichmann2023; @reuter2023]
+
+-   **Gestaltung der Wissenschaftskommunikation [z.B. @higgins2022; @lortie2021; @rycroft-smith2022b]**
+
+
+::: notes
+
+- letzeres Fokus und was damit gemein ist noch näher erläutern
+
+:::
+
+# Wissenschafts- <br> kommunikation {{< iconify fa-solid:comments >}}
+
+::: notes
+-   sehr breites sowie interdisziplinäres Feld
+:::
+
+## Wissenschaftskommunikation {{< iconify fluent-emoji-high-contrast:newspaper >}} {.scrollable .smaller}
+
+::: incremental
+-   Nutzerfreundliche Aufbereitung von Evidenz (z.B. clearing houses, plain language summaries) <!--, um wissenschaftlichen Laien den Umgang mit Evidenz zu erleichtern --> bedeutet, Evidenz ...
+    -   ... verfügbar zu machen
+    -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
+    -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
+
+- verschiedene Formate 
+:::
+
+::: notes
+
+- WK hat zum Ziel wissenschaftliche Evidenz nutzerfreundlich aufzubereiten d.h., sie zum einen frei/leichter zugänglich zu machen, aber auch XX
+
+- eingangs schon erläutert, dass es häufig quantitative Ergebnisse sind, die in spezifischen Kommunikationsformaten aufbereitet werden, die natürlich unterschiedliche Informationen enthalten wie eben Inferenzstatistik udn Effektstärken
+
+:::
+
+:::
+
+## Wissenschaftskommunikation {{< iconify fluent-emoji-high-contrast:newspaper >}} {.scrollable .smaller}
+
+-   Nutzerfreundliche Aufbereitung von Evidenz (z.B. clearing houses, plain language summaries) <!--, um wissenschaftlichen Laien den Umgang mit Evidenz zu erleichtern -->bedeutet, Evidenz ...
+    -   ... verfügbar zu machen
+    -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
+    -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
+
+## Wissenschafts- <br> kommunikationsforschung {{< iconify game-icons:archive-research >}} {.scrollable .smaller}
+
+::: incremental
+Interdisziplinäres Forschungsfeld mit ...
+
+-   ... überwiegend experimentellen Studiendesigns
+
+-   ... bisher eher eklektischen Forschungserkenntnissen, ABER ersten Hinweisen, dass die Art und Weise, wie statistische Informationen präsentiert werden, die Wahrnehmung und das Verständnis von wissenschaftlichen Laien beeinflusst <!--
+            + Berichten von Effektstärken reduziert *practical significance bias* [@michal2024] 
+            + Darstellung von *outcome variability* erhöht die Akkuratheit der Einschätzung [@]
+        --> [z.B. @kim2022; @hanel2019b; @kale2021; @hanel2019a; @mcphetres2020; @kühberger2015; @sotos2009; @michal2024]
+
+-   ... wenigen Studien, die (angehende) Lehrpersonen als Zielpopulation wählen [z.B. @fitzgerald2022; @lortie2021; @merk2023]
+:::
+
+::: notes
+- kaum Forschung in BiWi wie Lehrpersonen Inferenzstatistiken und Effektstärken verstehen und wahrnehmen
+
+-   zwar erste Studien z.B. aus der Psychologie,
+    -   die vor allem in experimentellen Studien untersuchen,
+    -   wie wissenschaftliche Laien im allgemeinen statistische Informationen verstehen und wahrnehmen
+    -    Forschungsstand sehr eklektisch z.B. U3 nie über mehrere Studien hinweg mit den gleichen Alternativen verglichen, was die Vergleichbarkeit der Studienergebnisse erschwert aber zeigt sich, dass die Aufbereitungen die Wahrnehmung und das Vereständnis beeinflusst
+
+-   unklar welche Aufbereitungen von Inferenzstatistiken und Effektstärken besonders verständlich sind und sich für solche WK-Formate wie CHs eignen
+
+-   Daher im folgenden drei 3 Studien, die unter anderem untersuchten wie informativ verschiedene textliche und visuelle Aufbereitungen von Inferenzstatistik und Effektstärken von Lehrpersonen wahrgenommen werden und wie sie diese verstehen
+:::
+
+# Studie 1: <br> Statistiken textbasiert kommunizieren {{< iconify fa6-solid file-lines >}} {.center .center-x}
+
+<br> <br>
+
+<center>gemeinsam mit <br> Peter Edelsbrunner<sup>2</sup>, Tom Rosman<sup>3</sup>, Colin Cramer<sup>4</sup> und Samuel Merk<sup>1</sup></center>
+
+<sup>2</sup> ETH Zürich <sup>3</sup> ZPID Trier <sup>4</sup> Eberhard Karls Universität Tübingen
+
+::: footer
+[Link zum Paper](https://doi.org/10.1016/j.tate.2023.104134)
+:::
+
+## Forschungsfragen {{< iconify fa6-solid circle-question >}}
+
+1.  Nehmen Lehrpersonen unterschiedliche statistische Beschreibungen in Pressemitteilungen unterschiedlich informativ wahr?
+
+<br>
+
+2.  Wie interpretieren Lehrpersonen verschiedene statistische Beschreibungen in Pressemitteilungen?
+
+<br>
+
+::: notes
+-   in der ersten Studie den Fragen nachgegangen
+    -   wie informativ Lehrpersonen verschiedene generische statistische Beschreibungen einschätzen
+    -   wie diese interpretiert werden 
+       -   verschiedene Hypothesen präregistriert, erst bei den Ergebnissdarstellung näher benennen
+
+<!--und zwischen Inf und Eff unterscheiden, da Zweifel bestehen, ob wissenschaftliche Laien hierzu in der Lage sind (vgl. Goodman, 2008; Sotos et al., 2007) -->
+
+ 
+:::
+
+## Design {{< iconify fa6-solid compass-drafting >}} {.smaller .scrollable}
+
+-   *N* = 414 Lehrpersonen in Deutschland (repräsentative Stichprobe)
+-   Unvollständig rotiertes 5x6 Within-Within-Design
+    -   Within-Faktor 1: Thema
+        -   G8
+
+        -   Motivationsförderung in Mathematik
+
+        -   Faktenboxen
+
+        -   PISA
+
+        -   Untertitel in Filmen
+
+            <center>![](img/study1_vignette.png){.lightbox width="400"}</center>
+    -   Within-Faktor 2 & unabhängige Variable: statistische Beschreibung
+        -   Standard Signifikanz-Aussage
+        -   Definition des *p*-Wertes
+        -   Beschreibung Bayes Faktor
+        -   Beschreibung von Cohen's *d*
+        -   Beschreibung von Cohen's *U*<sub>3</sub>
+        -   Kombinierte Aussage aus Inferenzstatistik und Effektstärke
+
+|  |  |  |
+|------------------------|------------------------|------------------------|
+| ![](img/study1_sig.png){.lightbox width="400"} | ![](img/study1_pval.png){.lightbox width="400"} | ![](img/study1_bf.png){.lightbox width="400"} |
+| ![](img/study1_cohensd.png){.lightbox width="400"} | ![](img/study1_u3.png){.lightbox width="400"} | ![](img/study1_kombi.png){.lightbox width="400"} |
+
+::: notes
+-   hierfür repräsentativ 414 Lehrpersonen in DE rekrutiert
+-   in einem unvollständig rotieren 5x6 within within Design Lehrpersonen 2 PM präsentiert, die hinsichtlich des Within-Faktors Thema und des Within Faktors statistische Beschreibung manipuliert waren
+    -   UV z.B. U3
+:::
+
+## Abhängige Variablen {{< iconify gis:measure >}} {.smaller .scrollable}
+
+-   **Wahrgenommene Informativität** ![](img/study1_item_informativity.png){.lightbox width="700"}
+-   **Interpretation als Inferenstatistik**<br> ![](img/study1_item_iinf.png){.lightbox width="700"}
+-   **Interpretation als Effektstärke** <br> ![](img/study1_item_ieff.png){.lightbox width="700"}
+
+::: notes
+-   als AV die wahrgenommene Informativität als Likter-Item 
+- und zum einen Interpretation als Inferenzstatistik
+    -   Likert-Item nach der Zustimmung gefragt, inwiefern die statistische Beschreibung eine Aussage darüber erlaubt, wie sicher es ist, dass der Unterschied tatsächlich exisitert - Interpretation als Inferenzstatistik -
+    -   und zum anderen Interpretation als Effektstärke
+    -   ähnliche Operationalisierung aber mit der Frage, ob statistische Beschreibung eine Aussage darüber erlaubt, wie groß der Unterschied ist
+    
+:::
+
+## Ergebnisse {{< iconify fa6-solid file-lines >}} {.smaller}
+
+> **Forschungsfrage 1: Nehmen Lehrpersonen unterschiedliche statistische Beschreibungen in Pressemitteilungen unterschiedlich informativ wahr?**
+
+<br>
+
+Lehrpersonen nehmen die Signifikanz-Aussage, Cohen's *U*<sub>3</sub> sowie die Kombination aus Inferenzstatistik und Effektstärke informativer wahr als die anderen statististischen Formulierungen. [{{< iconify fa6-solid ph:scales-bold >}}]{style="color:#8cd000;"}
+
+<center>
+
+![Adaptiert von Schmidt et al. (2023)](img/study1_informativity_product_plot.png){.lightbox width="400"}
+
+</center>
+
+::: notes
+- kommen wir zu den Ergebnissen
+- Lehrpersonen nehmen unterschiedlich informativ wahr, Signifikanz, U3 und Kombi
+- Bayesianische ANOVA Modelle mit Messwiederholung Evidenz für unsere Hypothese
+:::
+
+## Ergebnisse {{< iconify fa6-solid file-lines >}} {.smaller}
+
+> **Forschungsfrage 2: Wie interpretieren Lehrpersonen verschiedene statistische Beschreibungen in Pressemitteilungen?**
+
+<br>
+
+Lehrpersonen differenzieren nicht zwischen Inferenzstatistik und Effektstärke [{{< iconify fa:flash >}}]{style="color:#96412D;"}
+
+<center>
+
+![Adaptiert von Schmidt et al. (2023)](img/study1_interpretation_product_plot.png){.lightbox width="400"}
+
+</center>
+
+::: notes
+-   mit Blick auf die FF wie Lehrpersonen statistische Beschreibungen interpretieren herausfinden, dass Lehrpersonen nicht zwischen Inferenzstatistik und Effektstärke differenzieren
+-   näher an der Visualisierung erläutern
+:::
+
+##  {background-image="img/study1_interpretation_product_plot.png" background-size="contain"}
+
+::: notes
+-   ein zentrale Punkt, den ich mit dieser Visualisierung veranschaulichen möchte ist, dass bei allen statistischen Beschreibungen die Verteilungen der Interpretationen als Inf und Eff stark überlappen, Interpretation als Inf links und der Interpretation als Eff rechts
+-   also...
+:::
+
+<!--
+## {background-image="img/study1_interpretation_product_plot_interpretation_sign.png" background-size=contain}
+
+::: notes
+- Inferenzstatistiken - statistische Signifikanz- im Mittel eher als Inferenzstatistik
+
+:::
+
+## {background-image="img/study1_interpretation_product_plot_interpretation.png" background-size=contain}
+
+
+
+::: notes
+- Effektstärken - Cohen's d - im Mittel eher als Effektstärke
+ 
+- bei allen Beschreibungen überlappem die Verteilungen stark,
+
+:::
+-->
+
+##  {background-image="img/study1_interpretation_product_plot_interpretation_alle.png" background-size="contain"}
+
+::: notes
+-   die Mittelwerte beider Interpretationen liegen nah beieinander **in Anführungszeichen sagen**
+-   obwohl eigentlich - außer bei der Kombi - die Beschreibungen entweder eine Inferenzstatistik oder ein Effektstärkemaß abbilden
+:::
+
+##  {background-image="img/study1_interpretation_product_plot_korrekt.png" background-size="contain"}
+
+::: notes
+-   korrekte Interpretation würde daher also so aussehen: Mittelwerte weit auseinander,**Anführungszeichen** bzw. geringe Überlappung der Verteilungen
+
+-   mithilfe einer Bayesianischen messwiederholten ANOVA konnten wir--entgegen unserer usprünglichen Hypthese--starke Evidenz für diese fehlende Differenzierung gewinnen
+:::
+
+<!--
+##  {background-image="img/study1_interpretation_product_plot.png" background-size="contain"}
+
+::: notes
+-   ich möchte noch auf ein anderes interessantes Ergebnis aufmerksam machen
+- schauen wir uns die signifikanz und Cohen's U3 Beschreibung nochmals näher an
+:::
+
+##  {background-image="img/study1_interpretation_product_plot_bimodal.png" background-size="contain"}
+
+::: notes
+-   die Interpretation der Signifikanz-Aussage als Effektstärke ist bimodal verteilt 
+
+-   gleiches gilt für Interpretation von Cohen's U3 als Inferenzstatistik
+
+-   das lässt vermuten, dass es unterschiedliche Interpretationsgruppen gibt. 
+- Um ein Beispiel zu geben:  eine Gruppe an Lehrpersonen gibt, die sich sicher ist, dass die Signifikanz-Aussage keine Aussage über die Größe eines Unterschieds erlaubt, aber es gibt auch eine Gruppe, die sich fälschlicherweise sicher ist, dass diese Aussage zulässig ist.
+
+- Der Frage, ob solche unterschiedlichen Interpretationsgruppen vorliegen, wollte ich näher auf den Grund gehen, also haben Kolleg:innen und ich ...
+:::
+
+-->
+<!-- 
+##  {background-image="img/LatentProfiles.png" background-size="contain"}
+
+::: notes
+-   Durch das Explorieren mit latenten Profilanalysen ergaben sich verschiedene Interpretationsprofile, die überwiegend über beide Stichproben hinweg vergleichbar waren
+    -   manche Lehrpersonen waren durchaus in der Lage die Signifikanz oder U3 korrekt zu interpretieren, hier in grün abgetragen und als Disentanglers bezeichnet
+    -   aber Sie sehen in den rot dargestellten Profilen, dass die Mehrheit der Lehrpersonen Profilen zugeordnet werden können, die unterschiedliche Fehlkonzepte zusammenfassen
+
+:::
+
+-->
+
+# Studie 2: Effektstärken- <br> visualisierungen {{< iconify fa6-solid chart-area >}} {.center .center-x}
+
+<br> <br>
+
+<center>gemeinsam mit <br> Jürgen Schneider<sup>2</sup>, Kristina Bohrer<sup>1</sup> und Samuel Merk <sup>1</sup></center>
+
+<sup>1</sup> Pädagogische Hochschule Karlsruhe <sup>2</sup> DIPF Frankfurt
+
+::: footer
+[Link zum Paper](https://doi.org/10.1027/2151-2604/a000573)
+:::
+
+::: notes
+nun Fokus auf Effektstärkenvisualisierungen - ob vielleicht Visualisierungen beim Verständnis helfen könnten und dennoch informativ sind
+:::
+
+## Forschungsfragen {{< iconify fa6-solid circle-question >}}
+
+1.  Inwieweit beeinflusst der Visualisierungstyp z.B. die wahrgenommene Informativität der Ergebnisse? <br>
+
+2.  Inwieweit steigern Anreicherungen in Visualisierungen die Akkuratheit der Einschätzung?
+
+::: notes
+-   diese Studie umfasste 3 verschiedene Teilstudien - eine Delphi, explorative und konfirmatorische Stude - , um u.a. die folgenden Fragen zu beantworten
+:::
+
+<!--
+## Anlage {{< iconify lucide:layers-3 >}} {.scrollable}
+
+<center>![](img/study2_Tüdibase_Studies.png)</center>
+
+-->
+
+
+## Design {{< iconify fa6-solid compass-drafting >}} {.smaller .scrollable}
+
+-   *N* = 220 englischsprachige Lehrpersonen
+
+4x10x2x4 Between-Within-Within-Between Design
+
+-   Between-Faktor 1: Thema
+
+    -   Lesen auf Papier vs. Tablet
+
+    -   Lernen anhand eines Live-Vortrags vs. Video
+
+    -   Lernen mittels Experimentieren vs. Computersimulation
+
+    -   Lernen mittels Erklärvideo mit Untertitel vs. Erklärvideo ohne Untertitel
+
+        <center>![](img/study2_vignette.png){.lightbox width="850"}</center>
+
+-   Within-Faktor 2: präsentierte Effektstärke\
+    *d* ∈ {−.80; −.65; −.50; −.35; −.20; .20; .35; .50; .65; .80}
+
+-   Within-Faktor 3: Visualisierungsart
+
+    -   Halfeye plot mit Gruppen auf der x-Achse
+    -   Halfeye plot mit Gruppen auf der y-Achse
+
+<center>![](img/halfeye_xaxis.png){.lightbox width="100"} ![](img/halfeye_yaxis.png){.lightbox width="100"}</center>
+
+-   Between-Faktor 4 & unabhängige Variable: Experimentalbedingung
+    -   Kontrollgruppe
+    -   Signaling Cohen's *U*<sub>3</sub>
+    -   Signaling Overlap\
+    -   Benchmark
+
+<center>![](img/study2_signaling_CohensU3.jpg){.lightbox width="100"} ![](img/study2_signaling_Overlap.jpg){.lightbox width="100"} ![](img/study2_benchmarking.jpg){.lightbox width="80"}</center>
+
+::: notes
+-   220 englischsprachige Lehrpersonen in einem 4x10x2x4 Between-Within-Within-Between Design jeweils insgesamt 20 Effektstärkenvisualisierungen präsentiert
+-   __der Between-Faktor Thema kontextualisierte diese Effektstärkenvisualisierungen __
+-   die wiederum in der präsentierte Effektstärke
+-   und in der Art der Visualisierung
+    -   sogenannte Halfeye plots
+    -   wir haben diese präsentiert, da wir in vorherigen Studien, die auch Teil dieses Projektes waren, diese als besonders geeignet für die Kommunikation mit Lehrpersonen identifizieren konnten
+-   zentrale UV Experimentalbedingungen Between-Faktor, also ob Anreicherung vorhanden oder nicht
+    -   zwei von vier näher vorstellen
+    -   Kontrollgruppe: halfeye plots ohne Anreicherung
+    -   Signaling U3: Unterschiede im Sinne von Cohen's U3 hervorgehoben, also der Anteil der einen Gruppe über dem MW der anderen Gruppe lag
+
+:::
+## Abhängige Variablen {{< iconify gis:measure >}} {.scrollable .smaller}
+
+-   **Wahrgenommene Informativität**
+
+![](img/study2_item_informativity.png){.lightbox width="600"}
+
+-   **Akkuratheit**
+    -   Abstrakte Metrik\
+        ![](img/study2_item_am.png){.lightbox width="620"}
+    -   Cohen's *U*<sub>3</sub> Metrik\
+        ![](img/study2_item_u3.png){.lightbox width="670"}
+-   **Cohen's *U***<sub>3</sub> Fehlkonzept: Median der *U*<sub>3</sub> Ratings einer Person \< 21,2% (kleinster plausibler Wert, der *d* = −.8 entspricht)
+
+::: notes
+- erneut wahrgenommene Informativität als Likert-Item
+-   Akkuratheit operationalisiert als
+    -   abstrakte Metrik und U3 Metrik
+    - Lehrpersonen sollten die Größe der visuell präsentierte Effektstärke zum einen
+      - auf einer Skala von -1 komplette Unterlegenheit einer Gruppe bis +1 komplette Überlegenheit der Gruppe angeben 
+      - und in % im Sinne der U3 Metrik angeben
+-  dummy Variable U3-Fehlkonzepte gebildet
+    -  Personen, die im Median unplausibel kleine U3 Werte angaben wurden als Personen mit U3-Fehlkonzept definiert
+
+:::
+
+
+## Ergebnisse {{< iconify fa6-solid chart-area >}} {.smaller}
+
+> **Forschungsfrage 1: Inwieweit beeinflusst der Visualisierungstyp z.B. die wahrgenommene Informativität der Ergebnisse?**
+
+Lehrpersonen nehmen Halfeye plots informativer wahr als die anderen Effektstärkenvisualisierungen. [{{< iconify fa6-solid ph:scales-bold >}}]{style="color:#8cd000;"}
+
+<!--
+| | |
+|-------|-------|
+|-->
+
+<center>![](img/study2_plot_informativity.png){.lightbox width="300"}</center>
+
+<!--
+|![](img/study2_plot_informativity_enrichment.png){.lightbox width="400"}|
+-->
+
+::: notes
+- in der explorativen Studie zeigte sich, dass halfeyeplots informativer wahrgenommen werden als die anderen Visualisierungen
+- nochmals visualisiert
+- starke Evidenz für einen Unterschied zwischen den Visualisierungsarten, Effektstärken aber eher klein bis moderat
+- Informativität Beispiel, weitere Variablen analysiert, um dann herauszufinden, dass v.a. Halfeye plots die Wahrnehmung positiv beeinflussen
+
+:::
+
+## Ergebnisse {{< iconify fa6-solid chart-area >}} {.smaller}
+
+> **Forschungsfrage 2: Inwieweit steigern Anreicherungen in Visualisierungen die Akkuratheit der Einschätzung?**
+
+<br>
+
+| Akkuratheit | Fehlkonzept |
+|:----------------------------------:|:----------------------------------:|
+| {{<iconify charm:scales>}} <br> ![](img/study2_plot_diff_am.png){.lightbox width="150"} <br> ![](img/study2_plot_diff_u3.png){.lightbox width="150"} | [{{<iconify streamline:check-solid>}}]{style="color:#8cd000;"} <br> geringere Anzahl an Cohen's *U*<sub>3</sub>-Fehlkonzepten bei Signaling *U*<sub>3</sub>-Bedingung <br> ![](img/study2_plot_u3_misconceptions.png){.lightbox width="200"} |
+
+::: notes
+-   Ergebnisse basieren auf baysianischen Mehrebenenmodellen
+    -   hinsichtlich Akkuratheit Evidenz für die Nullhypothese
+    -   es gab also keine Unterschiede zwischen Visualisierungen mit Signaling U3 und ohne
+    -   interessant ist aber, dass es Unterschiede zwischen den Operationalisierungen gab
+        -   es gelingt Lehrpersonen erstaunlich gut, die visuell präsentierte Effektstärke in abstrakte Metrik zu transferieren **erst jetzt Viz öffnen**
+        -   sieht man in dieser Visualisierung gut, **erst jetzt öffnen** auf x-Achse die Differenz aus geschätzter und wahrer Effektstärke abgetragen
+        -   in allen Bedingungen, Mittelwerterte um 0 tummeln, 0 = bedeutet hier die perfekte Übereinstimmung; außerdem moderate Streuung
+    -   gleiche Grafik, aber jetzt U3 Ratings dargestellt: Verzerrungen in der U3 Metrik deutlich. Es liegt ein Bias vor, weil MW von 0 abweichen (Ergebnisse ohne Personen mit U3 Fehlkonzpet); Streuung moderat, die U3-Einschätzungen sind also im Durschnitt nicht akkurat
+-   positiv hervorzuheben ist, dass wir starke Evidenz dafür finden, dass Signaling U3 U3-Fehlkonzepte deutlich reduziert
+
+Ergänzung: Effsize \< 0 (rating in d – effsize)\*(-1), sonst rating_in_d – effsize)
+:::
+
+# [Studie 3: Textliche {{< iconify fa6-solid file-lines >}} und visuelle {{< iconify fa6-solid chart-area >}} Aufbereitung von Effektstärken]{style="font-size: .7em; display: block;"} {.center .center-x}
+
+<br>
+
+<center>gemeinsam mit <br> Florian Kühlwein<sup>1</sup>, Jürgen Schneider <sup>2</sup> und Samuel Merk<sup>1</sup> <br> <sup>1</sup> Pädagogische Hochschule Karlsruhe <br> <sup>2</sup> DIPF Frankfurt</center>
+
+::: notes
+
+- und in der für heute letzten Studie
+- die Flo federführend durchführt Ergebnisse aus den ersten beiden Studien zusammengebracht und u.a. der FF nachgegangen
+
+:::
+
+## Forschungsfrage {{< iconify fa6-solid circle-question >}}
+
+<br> Gibt es Unterschiede zwischen den textlich und visuell aufbereiteten Effektstärken bezüglich der wahrgenommenen Informativität und der Akkuratheit?
+
+::: notes
+- ob es Unterschiede zwischen textbasierter und visueller Aufbereitung von Effektstärken bezüglich der Informativität und Akkuratheit gibt
+
+:::
+
+## Design {{< iconify fa6-solid compass-drafting >}} {.smaller .scrollable}
+
+-   *N* = 20 englischsprachige Lehrpersonen aus UK und USA (Pilotstudie; rekrutiert via Prolific); Registered Report mit Bayesian Updating geplant
+-   4x6x2 Between-Within-Within Design
+    -   Between-Faktor 1: Thema
+        -   KI-Tutor Leseflüssigkeit
+        -   3D-Videos/2D-Videos
+        -   Activity Tracker
+        -   Experimentierkits ![](img/study3_OverviewAI.jpeg){.lightbox}
+    -   Within-Faktor 2: Effektstärke Cohen's *d* $\in\{-.8,-.5,-.2, .2, .5, .8\}$
+    -   Within-Faktor 3 & unabhängige Variable: Aufbereitungsmodi
+        -   Text (Cohen's *U*<sub>3</sub> Formulierung)
+        -   Visualisierung (Halfeye plot)
+
+|  |  |
+|------------------------------------|------------------------------------|
+| ![](img/study3_CohensU3.jpeg){.lightbox} | ![](img/study3_Halfeyeplot.jpeg){.lightbox} |
+
+
+::: notes
+- ähnlich aufgebautes Design
+- Between-Within-Within-Design wieder mit dem Thema als Between-Faktor und Effektstärken als Within-Faktoren, jetzt aber mit dem Aufbereitungsmodi als Within Faktor und UV
+  - Stufen: Text in Form von Cohen's U3 aus Studie 1 & Viz in Form von halfeye plots aus Studie 2
+
+- folgenden Ergebnisse aus einer Pilotstudie mit 20 englischsprachigen Lehrpersonen, RegRep geplant
+- Ergebnisse also als vorläufig zu betrachten
+
+::: 
+
+## Abhängige Variablen {{< iconify gis:measure >}} {.scrollable .smaller}
+
+-   **Wahrgenommene Informativität** [vgl. @schmidt2024a]
+
+|                                                               |     |
+|---------------------------------------------------------------|-----|
+| ![](img/study3_informativity_text.png){.lightbox width="900"} |     |
+| ![](img/study3_informativity_plot.png){.lightbox width="930"} |     |
+
+-   **Wahrgenommene Effektstärke** [@kale2020; @michal2024; @hullman2015]
+
+<center>![](img/study3_pos.png){.lightbox width="1000"}</center>
+
+
+::: notes
+
+- wieder Informativität als AV; in der Formulierung angepasst an Darstellungsmodi Text oder Visualisierung
+- Wahrgenommene Effektstärke, dieses mal aber anders operationalisiert
+  + textliche oder visuell dargestellte Effsize in sogenannte probability of superiority transformieren, also angeben wie oft sie denken, dass wie oft von 100 ausgewählten Person einer bestimmten Gruppe - hier AI tutor Gruppe - einen höheren Wert aufweist als die andere Gruppe - hier teacher feedback Gruppe- 
+  
+:::
+
+## Ergebnisse {{< iconify fa6-solid chart-line >}} {.smaller}
+
+> Forschungsfrage: Gibt es Unterschiede zwischen den textbasierten und visuellen Aufbereitungen von Effektstärken bezüglich der wahrgenommenen Informativität und der Akkuratheit?
+
+Lehrpersonen nehmen textbasierte Aufbereitungen von Effektstärken informativer wahr, schätzen aber visuelle Aufbereitungen akkurater ein. [{{< iconify fa6-solid proicons:arrow-swap >}}]{style="color:#8cd000;"}
+
+<br> <rb>
+
+| Informativität | Akkuratheit |
+|:----------------------------------:|:----------------------------------:|
+| ![](img/study3_results_informativeness_bearbeitet.png){.lightbox width="80%"} | ![](img/study3_results_accuracy_bearbeitet.png){.lightbox width="80%"} |
+
+::: notes
+was fanden wir heraus: nochmals Hinweis Ergebnisse vorläufig
+
+- Text informativer wahrnehmen als Vis, aber Vis akkurater einschätzen
+
+Akkuratheit - ganz interessant: über beide Bedingungen hinweg zeigt sich, dass Lehrpersonen gut zwischen kleinen und großen Effektstärken differenzieren können - und es zeigt sich XXX
+
+- Evidenz für diese deskriptiven Ergebnisse, nur noise noch inkonklusiv
+
+:::
+
+## Take Home Messages {{< iconify fa6-solid lightbulb >}}
+
+::: incremental
+-   Unterschiedliche Aufbereitungen von Inferenzstatistiken und Effektstärken werden unterschiedlich informativ wahrgenommen
+-   Intuitivere statistische Informationen {{<iconify fa-solid:not-equal>}} allgemein verständliche Informationen
+-   Effektstärke und Effektunsicherheit werden oft verwechselt
+-   Je nach Operationalisierung sind Effektstärkeninterpretationen unterschiedlich akkurat
+-   Signaling reduziert Fehlkonzepte deutlich
+-   Text und Visualisierungen scheinen komplementäre Vor- und Nachteile zu haben
+:::
+
+<!--
+Don'ts
+- Unsere Studie zeigte einen signifikanten Effekt 
+- Unsere Studie zeigte 
+- Unkommentierte Rohdaten
+
+
+Dos 
+- Igrendeine Common Language Effect Size verwenden (Michal & Shah, 2024)
+- Direkt annotierte Grafiken nutzen (Franconeri et al., 2021)
+- 
+-->
+
+::: notes
+**langsamer!**
+
+-   der Theorie nach intuitivere statistische Informationen...
+
+-   Signaling-Methode
+
+-   komplexes Forschungsgebiet
+
+    -   nur ein Detail im Detail näher angeschaut
+    -   braucht noch viele weitere Forschung
+:::
+
+## Diskussion {{< iconify bxs:directions >}}
+
+-   Text und Visualisierung didaktisch kombinieren / auswählen?
+
+-   Kommunikationsziel bei Effektstärken ...
+
+    -   ... Effektstärken relativieren können (standardisierte Effektstärken verwenden)?
+    -   ... Effektstärken absolut einschätzen können (natürlich metrische Effektstärken verwenden)?
+
+-   Einfluss der Schlussfolgerungsphase auf die Anwendungsphase?
+
+<center>
+
+![@schmidt2024 adaptiert von @grossophoff2023](img/Groß_Ophoff%20et%20al%20(2023)_adapted.png){.lightbox width="40%"}
+
+</center>
+
+::: notes
+-   ohne Effektgrößen practical significance bias
+:::
+
+# Vielen Dank für Ihre / Eure Aufmerksamkeit! {{< iconify streamline:happy-face >}}
+
+# Referenzen
