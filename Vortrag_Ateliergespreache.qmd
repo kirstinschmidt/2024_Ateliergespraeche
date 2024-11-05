@@ -99,7 +99,7 @@ border: none !important;
 
 ::: notes
 - es gibt eine Vielzahl an bildungswissenschaftlichen Forschungsergebnissen - manche sind proximaler zum Handeln von Lehrpersonen, manche distale
-  + wenn wir an Studien z.B. zum Thema G8, G9 denken oder an XXX Infos für die Bildungspolitik -> Makroebene 
+  + wenn wir an Studien z.B. zum Thema G8, G9 denken Infos für die Bildungspolitik -> Makroebene 
 -   wohingegen Befunde zu Themen wie retrieval practice, Forschendes Lernen die Unterrichtsgestaltung von Lehrpersonen oder das Handeln im Untericht beeinflussen können // unterschiedlich in der Praxis genutzt werden
     -   Evidenz z.B. zu Forschendem Lernen kann die eigene Unterrichtspraxis innovieren
     -   Evidenz kann aber auch genutzt werden, um Tipps für Schüler:innen abzuleiten z.B. wie Sie am besten Vokabeln lernen
@@ -113,7 +113,6 @@ border: none !important;
 
 ::: notes
 -   in dem Diskurs evidenzinformierte Schulpraxis zu verorten, aber Fokus auf Mikroebene
-- also wissenschaftliche Evidenz als Informationsquelle für die Praxis
 
 :::
 
@@ -225,8 +224,9 @@ border: none !important;
     -   ... verfügbar zu machen
     -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
     -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
-- Verschiedene Wissenschaftskommunikationsformate z.B. Podcasts oder Clearing Houses [@besa2024]
--   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearing Houses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
+- Verschiedene Wissenschaftskommunikationsformate für Lehrpersonen vorhanden z.B. Podcasts oder Clearing Houses [@besa2024]
+-   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearinghouses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"}), die wiederum für ein grundlegendes Verständnis von Evidenz notwendig sind 
+    -   Stichprobe
     -   Studiendesign
     -   Inferenzstatistik
     -   Effektstärken
@@ -244,9 +244,9 @@ border: none !important;
 - aber wie müssen solche Forschungsergebnisse aufbereitet sein, damit Lehrpersonen solche Ergebnisse verstehen und solche Schlussfolgerungen für ihre Praxis ableiten können?
 - Wissenschaftliches Wissen sehr komplex (Unsicherheit, Widersprüchlichkeit), aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt
 
+Tradeoff zwischen Verständlichkeit und Wissenschaftlichkeit Informationen, die notwendig sind um die Aussagekraft der Ergebnisse adäquat einschätzen zu können
 :::
 
-:::
 
 ## Wissenschaftskommunikation {{< iconify fluent-emoji-high-contrast:newspaper >}} {.scrollable .smaller}
 
@@ -254,8 +254,9 @@ border: none !important;
     -   ... verfügbar zu machen
     -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
     -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
-- Verschiedene Wissenschaftskommunikationsformate z.B. Podcasts oder Clearing Houses [@besa2024]
--   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearing Houses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
+- Verschiedene Wissenschaftskommunikationsformate z.B. Podcasts oder Clearinghouses [@besa2024]
+-   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearinghouses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"}), die wiederum für ein grundlegendes Verständnis von Evidenz notwendig sind 
+    -   Stichprobe
     -   Studiendesign
     -   **Inferenzstatistik**
     -   **Effektstärken**
@@ -271,7 +272,7 @@ border: none !important;
 
 -   *Statistische Signifikanz (und p-Wert)* 
 -   *Bayes Faktor* 
--   *Inferential uncertainty* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
+-   *Unsicherheitsintervalle* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
 -   ...
 
 **Präsentationsmodus**
@@ -303,8 +304,8 @@ border: none !important;
     + [Month of Progress: "The average impact of metacognition and self-regulation strategies (on learning) is an additional seven month's progress over the course of a year" [@EEF2021]]{style="color:#8cd000;"}
     + [Größenanalogien: "It is also approximately the size of the differencein mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
 -   Visualisierung 
-    + ![](img/Tüdibase_U3_vis){.lightbox width="60%" fig-align="left"}
-    + Hatties Barometer
+    + ![](img/Tüdibase_U3_vis.png){.lightbox width="60%" fig-align="left"}
+    +  ![ADD QUELLE](img/hattie_barometer.png){.lightbox width="60%" fig-align="left"}
     + ...
 
 :::
@@ -847,30 +848,39 @@ Dos
 
 -   Signaling-Methode
 
+-   Text und Visualisierung didaktisch kombinieren / auswählen?
+
 -   komplexes Forschungsgebiet
     -   nur ein Detail im Detail näher angeschaut
     -   braucht noch viele weitere Forschung
 :::
 
-## Diskussion {{< iconify bxs:directions >}} {.smaller}
+## Diskussion {{< iconify bxs:directions >}}
 
--   Text und Visualisierung didaktisch kombinieren / auswählen?
-
--   Kommunikationsziel bei Effektstärken ...
-
-    -   ... Effektstärken relativieren können (standardisierte Effektstärken verwenden)?
-    -   ... Effektstärken absolut einschätzen können (natürlich metrische Effektstärken verwenden)?
-
--   Einfluss der Schlussfolgerungsphase auf die Anwendungsphase?
 
 <center>
+<br>
+<br>
 
-![@schmidt2024 adaptiert von @grossophoff2023](img/Groß_Ophoff%20et%20al%20(2023)_adapted.png){.lightbox width="40%"}
+Notwendigkeit einer einigermaßen akkuraten Kommunikation für evidenzinformiertes Handeln überzeugend?
+
+::: incremental
+- kann Biases in der Interpretation (z.B. practical significance bias [@michal2024]) reduzieren
+- Interpretation sehr anspruchsvoll
+- ...
+
+:::
 
 </center>
-
 ::: notes
--   ohne Effektgrößen practical significance bias
+- abschließen eher mit einer Diskussionsfrage, die ich in die Runde geben möchte
+- ist es überzeugend eine einigermaßen akkurate Kommunikation - damit meine ich Effektstärken und Inferenzstatistiken zu berücksichtigen- als Notwendigkeit für evidenzinformiertes Handeln anzusehen? 
+  + sehr auf Ihre/Eure Argumente gespannt
+  + möchte zwei abschließend benennen
+    - Belege dafür, dass Biases reduziert werdne können;  z.B. ohne Effektgrößen practical significance bias
+  + aber keine Frage, dass das ganze ein sehr anspruchsvoller Prozess ist, nicht nur die statistischen Informationen müssen verstanden werden, sondern Effektstärken vor dem Hintergrund des Kontextes (Studienkontext) berücksichtigt werden etc. 
+
+-   Einfluss der Schlussfolgerungsphase auf die Anwendungsphase?
 :::
 
 # Vielen Dank für Ihre / Eure Aufmerksamkeit! {{< iconify streamline:happy-face >}}
