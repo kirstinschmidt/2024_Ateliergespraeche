@@ -7,7 +7,7 @@ logo: img/ph-logo.svg
 picture: img/KA.jpeg
 date: today
 lang: de
-date-format: ""
+date-format: "dddd, [den] D. MMMM, YYYY"
 embed-resources: false
 format: rlille-revealjs
 lightbox: true
@@ -69,9 +69,9 @@ border: none !important;
 :::::::::: columns
 ::::: {.column width="50%"}
 ::: r-stack
-![](img/g8g9_1.png){width="50%" fig-align="center"} ![](img/g8g9_3.png){width="40%" fig-align="center"}
+![](img/g8g9_1.png){.lightbox width="50%" fig-align="center"} ![](img/g8g9_3.png){.lightbox width="40%" fig-align="center"}
 
-![](img/g8g9_2.png){width="30%" fig-align="center"}
+![](img/g8g9_2.png){.lightbox width="30%" fig-align="center"}
 :::
 
 ::: fragment
@@ -83,9 +83,9 @@ border: none !important;
 :::::: {.column width="50%"}
 :::: fragment
 ::: r-stack
-![](img/Paper_Retrieval%20practice.png){width="50%" fig-align="right"}
+![](img/Paper_Retrieval%20practice.png){.lightbox width="50%" fig-align="right"}
 
-![](img/CHU_Forschendes%20Lernen.png){width="40%" fig-align="left"}
+![](img/CHU_Forschendes%20Lernen.png){.lightbox width="40%" fig-align="left"}
 
 
 :::
