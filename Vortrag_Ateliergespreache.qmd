@@ -53,11 +53,10 @@ border: none !important;
 }
 </style>
 
-<!--
 ::: footer
 {{< iconify academicons:open-materials >}} Folien cc-by {{< iconify academicons:creative-commons-by >}} unter XXX
 :::
--->
+
 
 ::: notes
 
@@ -75,6 +74,8 @@ border: none !important;
 
 ![](img/g8g9_2.png){.lightbox width="30%" fig-align="center"}
 :::
+
+[@hubner2022; @trautwein2015; @homuth2017]
 :::
 
 ::: fragment
@@ -90,11 +91,13 @@ border: none !important;
 
 ![](img/CHU_Forschendes%20Lernen.png){.lightbox width="40%" fig-align="left"}
 
-
 :::
+[@adesope2017; @knogler2017]
+
 ::::
 
 ::: fragment
+<br>
 &rarr; Forschungsergebnisse, die Handeln der Lehrpersonen informieren können (Mikroebene)
 :::
 ::::::
@@ -247,12 +250,12 @@ border: none !important;
 - verschiedene Formate z.B. Podcasts die explizit Lehrpersonen adressieren, sehr prominent aktuell sind sogenannte Clearinghouses (Schnittstelle zwischen Praxis und Wissenschaft angesehen werden)
 
 - wenn man in diese Formate schaut z.B. in Clearinghosues
-- werden häufig quantitative Studien aufbereitet sind, die natürlich unterschiedliche methodische Informationen enthalten wie eben Inferenzstatistik udn Effektstärken
+- werden häufig quantitative Studien aufbereitet sind, die natürlich unterschiedliche methodische Informationen enthalten wie Studiendesign, Inferenzstatistik und Effektstärken
   - grundsätzlich sind diese Informationen auch für ein grundlegendes Verständnis der Infos notwendig
 
-- Wissenschaftliches Wissen sehr komplex (Unsicherheit, Widersprüchlichkeit), 
+- nochmals Hinweis:Wissenschaftliches Wissen sehr komplex z.B. durch Unsicherheiten oder widersprüchliche Ergebnisse geprägt, was alles eine Rolle bei WK betrachtet werden könnte aber  
 
-Tradeoff zwischen Verständlichkeit und Wissenschaftlichkeit Informationen, die notwendig sind um die Aussagekraft der Ergebnisse adäquat einschätzen zu können
+Ergänzung: Tradeoff zwischen Verständlichkeit und Wissenschaftlichkeit Informationen, die notwendig sind um die Aussagekraft der Ergebnisse adäquat einschätzen zu können
 :::
 
 
@@ -283,11 +286,43 @@ aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt -
 ::: fragment
 **Inferenzstatistik**
 
+:::
+:::::
+
+::::: {.column width="50%"}
+::: fragment
+**Effektstärken**
+
+
+:::
+:::::
+:::::::::
+
+
+::::::::: columns
+::::: {.column width="50%"}
+::: fragment
 -   *Statistische Signifikanz (und p-Wert)* 
 -   *Bayes Faktor* 
 -   *Unsicherheitsintervalle* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
 -   ...
 
+:::
+:::::
+
+::::: {.column width="50%"}
+::: fragment
+-   *Standardisierte Effektstärke* <br> [z.B. Cohen's *d*]{style="color:#8cd000;"}
+-   *Leichter verständliche standardisierte Effektstärken* 
+-   *Effektstärken in natürlichen Metriken* 
+-   ...
+:::
+:::::
+:::::::::
+
+::::::::: columns
+::::: {.column width="50%"}
+::: fragment
 **Präsentationsmodus**
 
 -   Text 
@@ -303,19 +338,12 @@ aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt -
 
 ::::: {.column width="50%"}
 ::: fragment
-**Effektstärken**
-
--   *Standardisierte Effektstärke* <br> [z.B. Cohen's *d*]{style="color:#8cd000;"}
--   *Leichter verständliche standardisierte Effektstärken* 
--   *Effektstärken in natürlichen Metriken* 
--   ...
-
 **Präsentationsmodus**
 
 -   Text <br> 
     + [Cohen's U<sub>3</sub>:"..., dass 70% der SchülerInnen, die mit Lernmaterialien mit Hervorhebungen gearbeitet haben, Lerninhalte besser wiedergeben (...) als der Durchschnitt der Kontrollgruppe" [@wiesbeck2018 S.5]]{style="color:#8cd000;"}
     + [Month of Progress: "The average impact of metacognition and self-regulation strategies (on learning) is an additional seven month's progress over the course of a year" [@EEF2021]]{style="color:#8cd000;"}
-    + [Größenanalogien: "It is also approximately the size of the differencein mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
+    + [Größenanalogien: "It is also approximately the size of the difference in mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
 -   Visualisierung 
     + ![](img/Tüdibase_U3_vis.png){.lightbox width="60%" fig-align="left"}
     +  ![https://visible-learning.org/2022/01/hatties-barometer-of-influence-infographic/](img/hattie_barometer.png){.lightbox width="50%" fig-align="left"}
@@ -324,13 +352,10 @@ aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt -
 :::
 :::::
 :::::::::
-
-
-
 ::: notes
 - viele Möglichkeiten
 - zunächst die Frage welche Statistiken soll ich berichten?
-- Inferenzstatistik, die etwas über die Sicherheit des Effekts aussagen und Effektstärke, die Information über z.B. die Größe eines Unterschieds bietet? Nur das eine oder das andere oder beides?
+- Inferenzstatistik, die etwas über die Sicherheit des Effekts aussagen und Effektstärke, die Information über z.B. die Größe eines Unterschieds bietet? Oder? nur das eine oder das andere?
 - taucht man näher in diese Statistiken ein - wie aufbereiten?
   - klassische Signifikanzaussage, obwohl man aus bisheriger Forschung weiß, dass Fehlkonzepte hervorrufen
   - statt einzelnen Werten, eher Unsicherheitsintervalle?
@@ -888,16 +913,18 @@ Dos
 <br>
 <br>
 
-__*Notwendigkeit einer einigermaßen akkuraten Kommunikation statistischer Ergebnisse für evidenzinformiertes Handeln überzeugend?*__
+__Folgende Annahme überzeugend?__ <br>
+
+</center>
+
+> Nutzerfreundliche Kommunikation von Inferenzstatistik und Effektstärke *__notwendig__* für evidenzinformierte Schulpraxis
 
 ::: incremental
-- Interpretation sehr anspruchsvoll
-- Kann Biases in der Interpretation (z.B. practical significance bias [@michal2024]) reduzieren
+- Interpretation von Inferenzstatistik und Effektstärken sehr anspruchsvoll, aber ...
+- ... kann Biases in der Interpretation (z.B. practical significance bias [@michal2024]) reduzieren
 - ...
 
 :::
-
-</center>
 
 ::: notes
 - abschließen eher mit einer Diskussionsfrage, die ich in die Runde geben möchte
