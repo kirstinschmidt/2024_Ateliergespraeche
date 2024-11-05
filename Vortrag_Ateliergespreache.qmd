@@ -1,6 +1,6 @@
 ---
 title: "Bildungswissenschaftliche Forschungsergebnisse nutzerfreundlich an Lehrkräfte vermitteln?"
-subtitle: "Ergebnisse aus verschiedenen experimentellen Studien"
+subtitle: "Ergebnisse aus experimentellen Studien"
 author: Kirstin Schmidt | Pädagogische Hochschule Karlsruhe
 institute: Institut für Schul- und Unterrichtsentwicklung
 logo: img/ph-logo.svg
@@ -16,7 +16,7 @@ csl: apa.csl
 title-slide-attributes: 
   data-notes: 
   - freue mich heute Einblicke in meine Forschungstätigkeit zu geben
-  - ausgewählte Ergebnisse rund um das Thema nutzerfreundliche Kommunikation bildungswissenschaftlicher Forschungsergebnisse an Lehrpersonen
+  - ausgewählte Studien und davon ausgewählte Ergebnisse rund um das Thema nutzerfreundliche Kommunikation bildungswissenschaftlicher Forschungsergebnisse an Lehrpersonen
 ---
 
 ## Überblick {.smaller}
@@ -57,6 +57,13 @@ border: none !important;
 {{< iconify academicons:open-materials >}} Folien cc-by {{< iconify academicons:creative-commons-by >}} unter XXX
 :::
 
+
+::: notes
+
+- zunächst in das Thema einführen
+
+::: 
+
 ## Forschungsergebnisse aus den Bildungswissenschaften
 
 :::::::::: columns
@@ -68,14 +75,14 @@ border: none !important;
 :::
 
 ::: fragment
-&rarr; Forschungsergebnisse, die z.B. politisches Handeln informieren können (Makroebene)
+&rarr; Forschungsergebnisse, die politisches Handeln informieren können (Makroebene)
 :::
 :::::
 
 :::::: {.column width="50%"}
 :::: fragment
 ::: r-stack
-![](img/Paper_Retrieval%20practice.png){width="70%" fig-align="center"}
+![](img/Paper_Retrieval%20practice.png){width="70%" fig-align="right"}
 
 ![](img/CHU_Forschendes%20Lernen.png){width="60%" fig-align="left"}
 
@@ -99,75 +106,10 @@ border: none !important;
     -   Evidenz z.B. zu Forschendem Lernen kann die eigene Unterrichtspraxis innovieren
     -   Evidenz kann aber auch genutzt werden, um Tipps für Schüler:innen abzuleiten z.B. wie Sie am besten Vokabeln lernen
     
-- aber wie müssen solche Forschungsergebnisse aufbereitet sein, damit Lehrpersonen solche Ergebnisse verstehen und solche Schlussfolgerungen für ihre Praxis ableiten können?
-- Wissenschaftliches Wissen sehr komplex (Unsicherheit, Widersprüchlichkeit), aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt
-
-
--   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
-    -   Studiendesign
-    -   **Inferenzstatistik**
-    -   **Effektstärken**
-    -   ...
 
 
 :::
 
-## Forschungsergebnisse aus den Bildungswissenschaften - wie aufbereiten? {.smaller .scrollable}
-
-::::::::: columns
-::::: {.column width="50%"}
-::: fragment
-**Inferenzstatistik**
-
--   *Statistische Signifikanz (und p-Wert)*: <br> [z.B. "Basierend auf den 55 Einzelstudien ergibt die Metaanalyse einen signifikanten positiven Gesamteffekt von Peer Assessment auf die Leistung" [@diery2021, S.3]]{style="color:#8cd000;"}
--   *Bayes Faktor* <br> [z.B. "The Bayes Factor is 20, indicating that the data are at least than 20 times more likely under the assumption that men and women are different than under the assumption that they are equal" [@hanel2019b, p. 471]]{style="color:#8cd000;"}
--   *Inferential uncertainty* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
--   ...
-:::
-:::::
-
-::::: {.column width="50%"}
-::: fragment
-**Effektstärken**
-
--   *Standardisierte Effektstärke* <br> [z.B. Cohen's *d*]{style="color:#8cd000;"}
--   *Leichter verständliche standardisierte Effektstärken* <br> [z.B. Cohen's U<sub>3</sub>:"..., dass 70% der SchülerInnen, die mit Lernmaterialien mit Hervorhebungen gearbeitet haben, Lerninhalte besser wiedergeben (...) als der Durchschnitt der Kontrollgruppe" [@wiesbeck2018 S.5]]{style="color:#8cd000;"}
--   *Effektstärken in natürlichen Metriken* <br> [z.B. Month of Progress: "The average impact of metacognition and self-regulation strategies (on learning) is an additional seven month's progress over the course of a year" [@EEF2021]; Größenanalogien: "It is also approximately the size of the differencein mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
--   ...
-:::
-:::::
-:::::::::
-
-
-::: {.fragment}
-<center>
--  **Präsentationsmodus**
-    -   Text
-    -   Visualisierung ![](img/Tüdibase_U3_vis){.lightbox width="20%" fig-align="left"}
-</center> 
-:::
-
-
-::: notes
-- wie sollte man Ergebnisse der Inferenzstatistik kommunizeren?
-  + klassische Art: Signifikanz und p-Werten, aber aus Forschung weiß man, dass viele Fehlkonzepte hervorruft
-  + eine andere Inferenzstatistik wählen Bayes Faktoren
-  + eher auf Unsicherheiten den Fokus in der Kommunikation wählen?
-- zusätzlich Effektstärken? oder ausschließlich Effektstärken?
-- und wie diese?
-  + klassische Effektstärken, die in der Wissenschaft berichtet werden? aber voraussetzungsvoll z.B. SD verstehen, Benchmarks kennen
-  + eher sogenannte leicht verständliche standerdisierte Effektstärken verwenden wie U3
-  + oder natürliche Metriken wie Month of Progress oder Größenanalogien
-  
-- Sollte man diese statistischen Informationen in in einem Text oder in einer Visualisierung aufbereiten? beide Möglichkeiten kombinieren? 
-
- Barometer
-    -   sollte man erst die Einstellungen adressieren, also, dass Ergebnisse als informativ und praktisch relevant angesehen werden, bevor man Verständnis fördert
-
-zu all diesen Fragen bisher kaum empirische Forschung im Bildungskontext 
-
-- Relevanz nochmals stärker theoretisch einordnen
-:::
 
 # Evidenzinformierte Schulpraxis {{< iconify fa-solid:school >}}
 
@@ -281,11 +223,17 @@ zu all diesen Fragen bisher kaum empirische Forschung im Bildungskontext
 ## Wissenschaftskommunikation {{< iconify fluent-emoji-high-contrast:newspaper >}} {.scrollable .smaller}
 
 ::: incremental
--   Nutzerfreundliche Aufbereitung von Evidenz (z.B. clearing houses, plain language summaries) <!--, um wissenschaftlichen Laien den Umgang mit Evidenz zu erleichtern --> bedeutet, Evidenz ...
+-   Nutzerfreundliche Aufbereitung von Evidenz bedeutet, Evidenz ...
     -   ... verfügbar zu machen
     -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
     -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
-- verschiedene Formate 
+- Verschiedene Wissenschaftskommunikationsformate z.B. Podcasts oder Clearing Houses [@besa2024]
+-   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearing Houses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
+    -   Studiendesign
+    -   Inferenzstatistik
+    -   Effektstärken
+    -   ...
+
 
 :::
 
@@ -295,16 +243,99 @@ zu all diesen Fragen bisher kaum empirische Forschung im Bildungskontext
 
 - eingangs schon erläutert, dass es häufig quantitative Ergebnisse sind, die in spezifischen Kommunikationsformaten aufbereitet werden, die natürlich unterschiedliche Informationen enthalten wie eben Inferenzstatistik udn Effektstärken
 
+- aber wie müssen solche Forschungsergebnisse aufbereitet sein, damit Lehrpersonen solche Ergebnisse verstehen und solche Schlussfolgerungen für ihre Praxis ableiten können?
+- Wissenschaftliches Wissen sehr komplex (Unsicherheit, Widersprüchlichkeit), aber auch die Frage nach den statistischen Ergebnissen ein wesentlicher Aspekt
+
 :::
 
 :::
 
 ## Wissenschaftskommunikation {{< iconify fluent-emoji-high-contrast:newspaper >}} {.scrollable .smaller}
 
--   Nutzerfreundliche Aufbereitung von Evidenz (z.B. clearing houses, plain language summaries) <!--, um wissenschaftlichen Laien den Umgang mit Evidenz zu erleichtern -->bedeutet, Evidenz ...
+-   Nutzerfreundliche Aufbereitung von Evidenz bedeutet, Evidenz ...
     -   ... verfügbar zu machen
     -   ... im wissenschaftlichen Sinne akkurat, aber dennoch verständlich aufzubereiten
     -   ... praktisch bedeutsam aufzubereiten [@wadhwa2024; @higgins2022; @kerwer2021]
+- Verschiedene Wissenschaftskommunikationsformate z.B. Podcasts oder Clearing Houses [@besa2024]
+-   Aufbereitete Evidenz basiert häufig auf quantitativen Studien, die verschiedene quantitativ-methodische Informationen enthalten (vgl. Inhalte in Clearing Houses z.B. [What Works Clearinghouse](https://ies.ed.gov/ncee/wwc/){preview-link="true"}, [Clearinghouse Unterricht München](https://www.clearinghouse.edu.tum.de){preview-link="true"}, [Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit){preview-link="true"}, [Tüdibase](https://www.tuedilb-tuebingen.de/tuedi-base.html){preview-link="true"})
+    -   Studiendesign
+    -   **Inferenzstatistik**
+    -   **Effektstärken**
+    -   ...
+
+
+## Statistische Informationen aufbereiten - aber wie? {.smaller .scrollable}
+
+::::::::: columns
+::::: {.column width="50%"}
+::: fragment
+**Inferenzstatistik**
+
+-   *Statistische Signifikanz (und p-Wert)* 
+-   *Bayes Faktor* 
+-   *Inferential uncertainty* <br> [z.B. Standardfehler, Konfidenzintervalle [@zhang2023]]{style="color:#8cd000;"}
+-   ...
+
+**Präsentationsmodus**
+
+-   Text 
+    + ["Basierend auf den 55 Einzelstudien ergibt die Metaanalyse einen signifikanten positiven Gesamteffekt von Peer Assessment auf die Leistung" [@diery2021, S.3]]{style="color:#8cd000;"}
+    + ["The Bayes Factor is 20, indicating that the data are at least than 20 times more likely under the assumption that men and women are different than under the assumption that they are equal" [@hanel2019b, p. 471]]{style="color:#8cd000;"}
+    + ...
+-   Visualisierung 
+    + ![@zhang2023](img/zhang_inferential_uncertainty.png){.lightbox width="60%" fig-align="left"}
+    + ...
+
+:::
+:::::
+
+::::: {.column width="50%"}
+::: fragment
+**Effektstärken**
+
+-   *Standardisierte Effektstärke* <br> [z.B. Cohen's *d*]{style="color:#8cd000;"}
+-   *Leichter verständliche standardisierte Effektstärken* 
+-   *Effektstärken in natürlichen Metriken* 
+-   ...
+
+**Präsentationsmodus**
+
+-   Text <br> 
+    + [Cohen's U<sub>3</sub>:"..., dass 70% der SchülerInnen, die mit Lernmaterialien mit Hervorhebungen gearbeitet haben, Lerninhalte besser wiedergeben (...) als der Durchschnitt der Kontrollgruppe" [@wiesbeck2018 S.5]]{style="color:#8cd000;"}
+    + [Month of Progress: "The average impact of metacognition and self-regulation strategies (on learning) is an additional seven month's progress over the course of a year" [@EEF2021]]{style="color:#8cd000;"}
+    + [Größenanalogien: "It is also approximately the size of the differencein mean height between 15- and 16-year-old girls" [@cohen1988, p. 26]]{style="color:#8cd000;"}
+-   Visualisierung 
+    + ![](img/Tüdibase_U3_vis){.lightbox width="60%" fig-align="left"}
+    + Hatties Barometer
+    + ...
+
+:::
+:::::
+:::::::::
+
+
+
+::: notes
+- wie sollte man Ergebnisse der Inferenzstatistik kommunizeren?
+  + klassische Art: Signifikanz und p-Werten, aber aus Forschung weiß man, dass viele Fehlkonzepte hervorruft
+  + eine andere Inferenzstatistik wählen Bayes Faktoren
+  + eher auf Unsicherheiten den Fokus in der Kommunikation wählen?
+- zusätzlich Effektstärken? oder ausschließlich Effektstärken?
+- und wie diese?
+  + klassische Effektstärken, die in der Wissenschaft berichtet werden? aber voraussetzungsvoll z.B. SD verstehen, Benchmarks kennen
+  + eher sogenannte leicht verständliche standerdisierte Effektstärken verwenden wie U3
+  + oder natürliche Metriken wie Month of Progress oder Größenanalogien
+  
+- Sollte man diese statistischen Informationen in in einem Text oder in einer Visualisierung aufbereiten? beide Möglichkeiten kombinieren? 
+
+ Barometer
+    -   sollte man erst die Einstellungen adressieren, also, dass Ergebnisse als informativ und praktisch relevant angesehen werden, bevor man Verständnis fördert
+
+zu all diesen Fragen bisher kaum empirische Forschung im Bildungskontext 
+
+- Relevanz nochmals stärker theoretisch einordnen
+:::
+
 
 ## Wissenschafts- <br> kommunikationsforschung {{< iconify game-icons:archive-research >}} {.scrollable .smaller}
 
