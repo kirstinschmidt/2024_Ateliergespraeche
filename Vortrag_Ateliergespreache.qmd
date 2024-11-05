@@ -64,17 +64,18 @@ border: none !important;
 
 ::: 
 
-## Forschungsergebnisse aus den Bildungswissenschaften
+## Forschungsergebnisse aus den Bildungswissenschaften {{< iconify stash:light-bulb >}} {.smaller} 
 
 :::::::::: columns
 ::::: {.column width="50%"}
 ::: r-stack
-![](img/g8g9_1.png){width="70%" fig-align="center"} ![](img/g8g9_3.png){width="60%" fig-align="center"}
+![](img/g8g9_1.png){width="50%" fig-align="center"} ![](img/g8g9_3.png){width="40%" fig-align="center"}
 
-![](img/g8g9_2.png){width="50%" fig-align="center"}
+![](img/g8g9_2.png){width="30%" fig-align="center"}
 :::
 
 ::: fragment
+<br>
 &rarr; Forschungsergebnisse, die politisches Handeln informieren können (Makroebene)
 :::
 :::::
@@ -82,18 +83,15 @@ border: none !important;
 :::::: {.column width="50%"}
 :::: fragment
 ::: r-stack
-![](img/Paper_Retrieval%20practice.png){width="70%" fig-align="right"}
+![](img/Paper_Retrieval%20practice.png){width="50%" fig-align="right"}
 
-![](img/CHU_Forschendes%20Lernen.png){width="60%" fig-align="left"}
+![](img/CHU_Forschendes%20Lernen.png){width="40%" fig-align="left"}
 
 
 :::
 ::::
 
 ::: fragment
-<br> 
-<br> 
-<br> 
 &rarr; Forschungsergebnisse, die Handeln der Lehrpersonen informieren können (Mikroebene)
 :::
 ::::::
@@ -365,7 +363,7 @@ Interdisziplinäres Forschungsfeld mit ...
 -   Daher im folgenden drei 3 Studien, die unter anderem untersuchten wie informativ verschiedene textliche und visuelle Aufbereitungen von Inferenzstatistik und Effektstärken von Lehrpersonen wahrgenommen werden und wie sie diese verstehen
 :::
 
-# Studie 1: <br> Statistiken textbasiert kommunizieren {{< iconify fa6-solid file-lines >}} {.center .center-x}
+# Studie 1: <br> Statistiken textbasiert kommunizieren {{< iconify fa6-solid file-lines >}} {.center .center-x .smaller}
 
 <br> <br>
 
@@ -563,7 +561,7 @@ Lehrpersonen differenzieren nicht zwischen Inferenzstatistik und Effektstärke [
 
 -->
 
-# Studie 2: Effektstärken- <br> visualisierungen {{< iconify fa6-solid chart-area >}} {.center .center-x}
+# Studie 2: Effektstärken- <br> visualisierungen {{< iconify fa6-solid chart-area >}} {.center .center-x .smaller}
 
 <br> <br>
 
@@ -587,6 +585,9 @@ nun Fokus auf Effektstärkenvisualisierungen - ob vielleicht Visualisierungen be
 
 ::: notes
 -   diese Studie umfasste 3 verschiedene Teilstudien - eine Delphi, explorative und konfirmatorische Stude - , um u.a. die folgenden Fragen zu beantworten
+
+- Fokus auf konfirmatorische Studie 
+- erste FF nicht die Ergebnisse präsentieren, sondern beim Erläutern des Designs darauf eingehen
 :::
 
 <!--
@@ -674,20 +675,15 @@ nun Fokus auf Effektstärkenvisualisierungen - ob vielleicht Visualisierungen be
 
 ## Ergebnisse {{< iconify fa6-solid chart-area >}} {.smaller}
 
-> **Forschungsfrage 1: Inwieweit beeinflusst der Visualisierungstyp z.B. die wahrgenommene Informativität der Ergebnisse?**
+> **Forschungsfrage 1: Inwieweit beeinflusst die Visualisierung z.B. die wahrgenommene Informativität der Ergebnisse?**
 
-Lehrpersonen nehmen Halfeye plots informativer wahr als die anderen Effektstärkenvisualisierungen. [{{< iconify fa6-solid ph:scales-bold >}}]{style="color:#8cd000;"}
+Lehrpersonen nehmen Halfeye plots informativer wahr als die anderen Effektstärkenvisualisierungen [{{< iconify fa6-solid ph:scales-bold >}}]{style="color:#8cd000;"}, <br>
+aber inkonklusive Evidenz hinsichtlich Visualisierungen mit und ohne Anreicherungen [{{< iconify fa6-solid ep:question-filled >}}]{style="color:#8cd000;"}
 
-<!--
+
 | | |
 |-------|-------|
-|-->
-
-<center>![](img/study2_plot_informativity.png){.lightbox width="300"}</center>
-
-<!--
-|![](img/study2_plot_informativity_enrichment.png){.lightbox width="400"}|
--->
+|![](img/study2_plot_informativity.png){.lightbox width="200"} | ![](img/study2_plot_informativity_enrichment.png){.lightbox width="300"}|
 
 ::: notes
 - in der explorativen Studie zeigte sich, dass halfeyeplots informativer wahrgenommen werden als die anderen Visualisierungen
@@ -764,8 +760,11 @@ Ergänzung: Effsize \< 0 (rating in d – effsize)\*(-1), sonst rating_in_d – 
 
 ::: notes
 - ähnlich aufgebautes Design
-- Between-Within-Within-Design wieder mit dem Thema als Between-Faktor und Effektstärken als Within-Faktoren, jetzt aber mit dem Aufbereitungsmodi als Within Faktor und UV
-  - Stufen: Text in Form von Cohen's U3 aus Studie 1 & Viz in Form von halfeye plots aus Studie 2
+- insgesamt 12 Forschungsergebnisse erhalten, die 
+  + erneut durch ein Thema - jetzt aber andere - kontextualisiert wurden z.B. AI Tutor (Between-Faktor)
+  + erneut in der Effektstärke variierten (Within-Faktor)
+  + jetzt aber entweder als Text oder Visualisierung präsentiert wurden 
+    + zufällig zunächst 6 Text in Form von Cohen's U3 aus Studie 1 oder zufällig 6 als Viz in Form von halfeye plots aus Studie 2
 
 - folgenden Ergebnisse aus einer Pilotstudie mit 20 englischsprachigen Lehrpersonen, RegRep geplant
 - Ergebnisse also als vorläufig zu betrachten
@@ -817,7 +816,7 @@ Akkuratheit - ganz interessant: über beide Bedingungen hinweg zeigt sich, dass 
 
 :::
 
-## Take Home Messages {{< iconify fa6-solid lightbulb >}}
+## Take Home Messages {{< iconify fa6-solid lightbulb >}} {.smaller}
 
 ::: incremental
 -   Unterschiedliche Aufbereitungen von Inferenzstatistiken und Effektstärken werden unterschiedlich informativ wahrgenommen
@@ -849,12 +848,11 @@ Dos
 -   Signaling-Methode
 
 -   komplexes Forschungsgebiet
-
     -   nur ein Detail im Detail näher angeschaut
     -   braucht noch viele weitere Forschung
 :::
 
-## Diskussion {{< iconify bxs:directions >}}
+## Diskussion {{< iconify bxs:directions >}} {.smaller}
 
 -   Text und Visualisierung didaktisch kombinieren / auswählen?
 
