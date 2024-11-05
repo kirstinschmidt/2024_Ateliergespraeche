@@ -54,7 +54,7 @@ border: none !important;
 </style>
 
 ::: footer
-{{< iconify academicons:open-materials >}} Folien cc-by {{< iconify academicons:creative-commons-by >}} unter XXX
+{{< iconify academicons:open-materials >}} Folien cc-by {{< iconify academicons:creative-commons-by >}} unter <br> https://kirstinschmidt.github.io/2024_Ateliergespraeche/
 :::
 
 
@@ -908,10 +908,7 @@ Dos
 
 ## Diskussion {{< iconify bxs:directions >}}
 
-
 <center>
-<br>
-<br>
 
 __Folgende Annahme überzeugend?__ <br>
 
